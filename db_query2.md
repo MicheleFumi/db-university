@@ -69,7 +69,7 @@ JOINS
  JOIN `teachers` ON `course_teacher`.`teacher_id`= `teachers`.`id`
 
  6.
- SELECT 
+ SELECT DISTINCT
     `teachers`.`name`,
     `teachers`.`surname`
 
