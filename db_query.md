@@ -14,7 +14,7 @@
  
  SELECT *
  FROM `students`
- WHERE `date_of_birth` <= `1994-12-04`
+ WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30
 
 4.
  
@@ -36,7 +36,7 @@
  WHERE `level`= 'magistrale'
 
 7.
- SELECT *
+ SELECT COUNT(`id`) AS `totale dipartimenti`
  FROM `departments`
 
 8.
